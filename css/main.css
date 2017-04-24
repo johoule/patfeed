@@ -210,7 +210,7 @@ label {
   width: 50%;
 }
 
-@media (min-width: 960px) {
+@media (max-width: 479px), (min-width: 960px) {
   .quiz-link {
     margin: 0.8rem 0;
     width: 100%;
