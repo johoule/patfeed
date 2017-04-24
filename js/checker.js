@@ -1,12 +1,8 @@
 function checkIt() {
-
   // Initialize scores
   var nerd = 0;
   var jock = 0;
   var cheer = 0;
-  var hipster = 0;
-  var band = 0;
-  var emo = 0;
 
   // Get all checkbox elements from form
   var elements = document.getElementsByClassName('answer');
@@ -38,11 +34,9 @@ function checkIt() {
 
   // Form a message
   var message;
-  var picture;
 
   if (max == nerd) {
     message = "Looks like you took a break from playing video games and coding websites, you nerd.";
-    picture = "<img src='img/nerd.jpg'>";
   }
   else if (max == jock) {
     message = "Do you even lift, bro? Of course you do. You're clearly a jock.";
@@ -50,13 +44,8 @@ function checkIt() {
   else if (max == cheer) {
     message = "Hip hip, hooray! You are such a cheerleader. Go sports!";
   }
-  else {
-    message = "Uh, oh! Something went wrong.";
-  }
 
   // Display result
-  document.getElementById('result').style.display = "block";
   document.getElementById('result').innerHTML = counts;
-  // document.getElementById('pic').innerHTML = picture;
   // document.getElementById('result').innerHTML = message;
 }

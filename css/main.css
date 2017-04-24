@@ -2,10 +2,16 @@
 
 body {
   font-family: sans-serif;
+  margin-top: 60px;
 }
 
 header {
-
+  background-color: #fff;
+  box-shadow: 5px 0 5px #999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 main {
@@ -65,11 +71,20 @@ img  {
 /*** link styles ***/
 
 a:link, a:visited {
-  color: #50a3d9
+  color: #50a3d9;
+  text-decoration: none;
 }
 
 a:hover, a:active {
+  color: #14405c;
+}
 
+.news a:link, .news a:visited {
+  color: #000;
+}
+
+.news a:hover, .news a:active {
+  color: #50a3d9;
 }
 
 /* odin overrides */
@@ -78,9 +93,13 @@ a:hover, a:active {
   justify-content: flex-start;
 }
 
-.navbar-brand {
+a.navbar-brand {
   color: #b8071a;
   font-weight: bold;
+}
+
+.navbar a:active, .navbar a:hover {
+  text-decoration: none;
 }
 
 .button-primary {
@@ -88,23 +107,18 @@ a:hover, a:active {
   width: 100%;
 }
 
-/* carousel styles */
-.carousel {
-  overflow: hidden;
-  white-space:nowrap;
-}
-
 /* quiz styles */
-.quiz-title {
+h1.quiz-title {
   color: #000;
-  font-size: 3.0rem;
+  font-size: 2.6rem;
+  line-height: 3.0rem;
   margin: 0;
 }
 
 .tagline {
   color: #444;
   display: block;
-  margin: 0.4rem 0;
+  margin: 0.2rem 0;
 }
 
 .date {
@@ -114,8 +128,12 @@ a:hover, a:active {
   margin: 0.4rem 0;
 }
 
-.byline {
+.meta {
   margin: 0.8rem 0;
+}
+
+.byline {
+  margin: 1.2rem 0;
 }
 
 .author-name {
@@ -136,8 +154,9 @@ a:hover, a:active {
   background-color: #14405c;
   color: #fff;
   display: block;
+  font-size: 2.8rem;
   font-weight: bold;
-  padding: 0.8rem;
+  padding: 1.2rem;
   text-align: center;
 }
 
@@ -159,7 +178,6 @@ label {
 
 #result {
   border: 1px solid #999;
-  display: none;
   margin: 24px 0;
   padding: 24px;
 }
@@ -189,4 +207,12 @@ label {
 
 .quiz-link {
   margin: 0.8rem 0;
+  width: 50%;
+}
+
+@media (min-width: 960px) {
+  .quiz-link {
+    margin: 0.8rem 0;
+    width: 100%;
+  }
 }

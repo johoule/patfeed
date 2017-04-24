@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- page title -->
-  <title>Quizzes on PatFeed: What kind of student are you?</title>
+  <title>We can guess the clique you belong to at school</title>
 
   <!-- styles -->
   <link rel="stylesheet" href="css/odin-0.10.4.css">
@@ -17,47 +17,35 @@
 <body>
   <header>
     <div class="container-xl">
-      <nav class="navbar">
-        <a class="navbar-brand" href="#">PatFeed</a>
+      <nav class="navbar navbar-slideout-sm">
+      <a class="navbar-brand" href="#">PatFeed</a>
+      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
 
-        <div class="navbar-menu">
-          <ul>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">Quizzes</a></li>
-            <li><a href="#">Tasty</a></li>
-            <li><a href="#">More</a></li>
-          </ul>
-        </div>
+      <div class="navbar-menu">
+        <button class="menu-dismiss" aria-label="Dismiss navigation">&times;</button>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Quizzes</a></li>
+          <li><a href="#">Tasty</a></li>
+          <li><a href="#">More</a></li>
+        </ul>
       </nav>
-    </div>
-
-    <div class="carousel hide-sm-down">
-      <img src="https://dummyimage.com/200x100/aaa/fff">
-      <img src="https://dummyimage.com/200x100/aaa/fff">
-      <img src="https://dummyimage.com/200x100/aaa/fff">
-      <img src="https://dummyimage.com/200x100/aaa/fff">
-      <img src="https://dummyimage.com/200x100/aaa/fff">
-      <img src="https://dummyimage.com/200x100/aaa/fff">
-      <img src="https://dummyimage.com/200x100/aaa/fff">
-      <img src="https://dummyimage.com/200x100/aaa/fff">
-      <img src="https://dummyimage.com/200x100/aaa/fff">
-      <img src="https://dummyimage.com/200x100/aaa/fff">
-      <img src="https://dummyimage.com/200x100/aaa/fff">
-      <img src="https://dummyimage.com/200x100/aaa/fff">
-      <img src="https://dummyimage.com/200x100/aaa/fff">
     </div>
   </header>
 
-  <main>
-    <div class="container-xl">
+  <div class="container-xl">
+    <main>
 
       <div class="row">
-        <div class="col-sm-9">
-          <!-- insert quiz here -->
-          <h1 class="quiz-title">What kind of student are you?</h1>
-          <span class="tagline">You think you're so cool, don't you?</span>
-          <span class="date">Posted on April 18, 2017 at 5:34 p.m.</span>
+        <div class="col-lg-9">
+
+          <!-- Quiz begins here -->
+          <div class="meta">
+            <h1 class="quiz-title">We can guess the clique you belong to at school</h1>
+            <span class="tagline">You think you're so cool, don't you?</span>
+            <span class="date">Posted on April 18, 2017 at 5:34 p.m.</span>
+          </div>
 
           <div class="byline">
             <img class="circle left" src="https://dummyimage.com/60x60/aaa/fff">
@@ -196,84 +184,95 @@
           </form>
 
           <div id="result"></div>
-          <!-- end of quiz -->
+          <!-- End of quiz -->
+
+        </div>
+
+        <!-- Begin sidebar -->
+        <div class="col-lg-3">
+          <div class="news hide-md-down">
+            <h3>PatFeed News</h3>
+
+            <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></p>
+
+            <p><a href="#">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</a></p>
+
+            <p><a href="#">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</a></p>
+          </div>
+
+          <h3>Now Trending</h3>
+
+          <div class="row">
+            <div class="quiz-link">
+              <img src="https://dummyimage.com/400x250/aaa/fff">
+              <h4>Quiz title goes here</h4>
+            </div>
+
+            <div class="quiz-link">
+              <img src="https://dummyimage.com/400x250/aaa/fff">
+              <h4>Quiz title goes here</h4>
+            </div>
+
+            <div class="quiz-link">
+              <img src="https://dummyimage.com/400x250/aaa/fff">
+              <h4>Quiz title goes here</h4>
+            </div>
+
+            <div class="quiz-link">
+              <img src="https://dummyimage.com/400x250/aaa/fff">
+              <h4>Quiz title goes here</h4>
+            </div>
+          </div>
+        </div>
+        <!-- End sidebar -->
+
       </div>
+    </main>
 
-      <div class="col-sm-3">
-        <div class="news">
-          <h3>PatFeed News</h3>
+    <footer>
+      <h3>More Buzz</h3>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-        <h3>Popular Quizzes</h3>
-
-        <div class="quiz-link">
-          <img src="https://dummyimage.com/400x150/aaa/fff">
-          <h4>Quiz title goes here</h4>
-        </div>
-
-        <div class="quiz-link">
-          <img src="https://dummyimage.com/400x150/aaa/fff">
-          <h4>Quiz title goes here</h4>
-        </div>
-        <div class="quiz-link">
-          <img src="https://dummyimage.com/400x150/aaa/fff">
-          <h4>Quiz title goes here</h4>
-        </div>
-
-        <div class="quiz-link">
-          <img src="https://dummyimage.com/400x150/aaa/fff">
-          <h4>Quiz title goes here</h4>
-        </div>
-
-        <div class="quiz-link">
-          <img src="https://dummyimage.com/400x150/aaa/fff">
-          <h4>Quiz title goes here</h4>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="container-xl">
       <div class="row">
-        <div class="col-sm-4">
-          <img src="https://dummyimage.com/600x400/aaa/fff">
+        <!-- Begin clickbait headlines -->
+        <div class="col-lg-4 col-md-6">
+          <img src="https://dummyimage.com/400x250/aaa/fff">
           <h4>Clickbait headline goes here</h4>
         </div>
 
-        <div class="col-sm-4">
-          <img src="https://dummyimage.com/600x400/aaa/fff">
-          <h4>Clickbait headline goes here</h4>
-        </div>
-        <div class="col-sm-4">
-          <img src="https://dummyimage.com/600x400/aaa/fff">
+        <div class="col-lg-4 col-md-6">
+          <img src="https://dummyimage.com/400x250/aaa/fff">
           <h4>Clickbait headline goes here</h4>
         </div>
 
-        <div class="col-sm-4">
-          <img src="https://dummyimage.com/600x400/aaa/fff">
-          <h4>Clickbait headline goes here</h4>
-        </div>
-        <div class="col-sm-4">
-          <img src="https://dummyimage.com/600x400/aaa/fff">
+        <div class="col-lg-4 col-md-6">
+          <img src="https://dummyimage.com/400x250/aaa/fff">
           <h4>Clickbait headline goes here</h4>
         </div>
 
-        <div class="col-sm-4">
-          <img src="https://dummyimage.com/600x400/aaa/fff">
+        <div class="col-lg-4 col-md-6">
+          <img src="https://dummyimage.com/400x250/aaa/fff">
           <h4>Clickbait headline goes here</h4>
         </div>
+
+        <div class="col-lg-4 col-md-6">
+          <img src="https://dummyimage.com/400x250/aaa/fff">
+          <h4>Clickbait headline goes here</h4>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <img src="https://dummyimage.com/400x250/aaa/fff">
+          <h4>Clickbait headline goes here</h4>
+        </div>
+      <!-- End headlines-->
+
       </div>
-    </div>
-  </footer>
+    </footer>
+
+  </div>
 
   <!-- include any javascript below this line -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="js/odin-0.7.1.js"></script>
   <script src="js/checker.js"></script>
 
 </body>
