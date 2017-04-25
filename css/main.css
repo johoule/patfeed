@@ -38,7 +38,10 @@ aside {
 /**** content styles ***/
 
 h1 {
-
+  color: #000;
+  font-size: 2.6rem;
+  line-height: 3.0rem;
+  margin: 0;
 }
 
 h2 {
@@ -108,13 +111,6 @@ a.navbar-brand {
 }
 
 /* quiz styles */
-h1.quiz-title {
-  color: #000;
-  font-size: 2.6rem;
-  line-height: 3.0rem;
-  margin: 0;
-}
-
 .tagline {
   color: #444;
   display: block;
@@ -150,7 +146,7 @@ h1.quiz-title {
   margin: 0.4rem 0;
 }
 
-.question {
+h2.question {
   background-color: #14405c;
   color: #fff;
   display: block;
