@@ -90,6 +90,7 @@ body {
 
 .col-xs-6 {
   width: 50%;
+  font-size: 12px;
 }
 
 .col-xs-7 {
@@ -236,8 +237,18 @@ body {
     width: 25%;
   }
 
+  .col-lg-3-ish {
+    width: 32%
+  }
+
   .col-lg-4 {
     width: 33.333333%;
+  }
+
+  .col-lg-4-extra {
+    width: 33.333333%;
+    margin: 0px, 0px;
+    padding: 0px, 0px;
   }
 
   .col-lg-5 {
@@ -254,6 +265,12 @@ body {
 
   .col-lg-8 {
     width: 66.666666%;
+  }
+
+  .col-lg-8-extra {
+    width: 66.666666%;
+    margin: 0px, 0px;
+    padding: 0px, 0px;
   }
 
   .col-lg-9 {
