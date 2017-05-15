@@ -38,7 +38,7 @@ aside {
 /**** content styles ***/
 
 h1 {
-  color: #000;
+  color: #555555;
   font-size: 2.6rem;
   line-height: 3.0rem;
   margin: 0;
@@ -47,6 +47,8 @@ h1 {
 h2 {
 
 }
+
+
 
 h3 {
   font-size: 22px;
@@ -86,10 +88,25 @@ p {
 
 }
 
+p.hh {
+  font-size: 20px;
+
+  border: solid #eeeeee 8px;
+  margin-bottom: 4px;
+}
+
+p.tt{
+  margin-bottom: 6px;
+}
+
 
 /*** image styles ***/
 
 img  {
+
+}
+
+img.tag {
 
 }
 
@@ -123,12 +140,12 @@ div.trending {
 /*** link styles ***/
 
 a:link, a:visited {
-  color: #50a3d9;
+  color: #b8071a;
   text-decoration: none;
 }
 
 a:hover, a:active {
-  color: #14405c;
+  color: #50a3d9;
 }
 
 .news a:link, .news a:visited {
@@ -197,7 +214,7 @@ a.navbar-brand {
 
 h2.question {
   background-color: #14405c;
-  color: #fff;
+  color: #b8071a;
   display: block;
   font-size: 2.8rem;
   font-weight: bold;
